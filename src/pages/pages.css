@@ -1,0 +1,350 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-secondary) 100%);
+}
+
+.home-content {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.game-title {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  text-shadow: 0 0 10px rgba(139, 197, 63, 0.3);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+}
+
+.game-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.form-section {
+  background: var(--color-bg-tertiary);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  margin-bottom: var(--spacing-lg);
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.input-group input[type="text"] {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-group input[type="text"]:focus {
+  border-color: var(--color-primary);
+}
+
+.input-group input[type="text"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.room-code-inputs {
+  display: flex;
+  gap: var(--spacing-xs);
+  justify-content: center;
+}
+
+.room-code-char {
+  width: 48px !important;
+  height: 56px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-large {
+  width: 100%;
+  padding: var(--spacing-lg);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 197, 63, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-text-secondary);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--color-text);
+  background: var(--color-bg-secondary);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: var(--spacing-lg) 0;
+  color: var(--color-text-muted);
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-bg-secondary);
+}
+
+.divider span {
+  padding: 0 var(--spacing-md);
+}
+
+.error-message {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius-md);
+  color: var(--color-danger);
+  font-size: 0.9rem;
+}
+
+/* Lobby Page */
+.lobby-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.lobby-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.btn-back {
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.btn-back:hover {
+  color: var(--color-text);
+}
+
+.room-code-display {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--color-bg-tertiary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
+.code-label {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.code-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+}
+
+.btn-copy {
+  background: transparent;
+  font-size: 1.2rem;
+  padding: var(--spacing-xs);
+  opacity: 0.7;
+}
+
+.btn-copy:hover {
+  opacity: 1;
+}
+
+.lobby-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.qr-section {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-placeholder {
+  width: 200px;
+  height: 200px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  border: 2px dashed var(--color-bg-secondary);
+}
+
+.qr-icon {
+  font-size: 3rem;
+}
+
+.qr-placeholder p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.players-section h2 {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.3rem;
+  color: var(--color-text-secondary);
+}
+
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.player-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.player-card.empty {
+  opacity: 0.5;
+  border: 2px dashed var(--color-bg-secondary);
+  background: transparent;
+}
+
+.player-avatar {
+  font-size: 1.5rem;
+}
+
+.player-name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.host-badge {
+  font-size: 0.8rem;
+  color: var(--color-warning);
+  margin-left: var(--spacing-sm);
+}
+
+.start-section {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.waiting-message {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  padding: var(--spacing-lg);
+}
+
+.hint {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-top: var(--spacing-sm);
+}
+
+/* Game Page */
+.game-page {
+  min-height: 100vh;
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.game-page h1 {
+  color: var(--color-primary);
+}
+
+.game-page ul {
+  text-align: left;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .game-title {
+    font-size: 2rem;
+  }
+  
+  .room-code-char {
+    width: 40px !important;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+  
+  .lobby-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}
