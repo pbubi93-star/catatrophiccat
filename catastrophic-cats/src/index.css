@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  @apply bg-slate-900 text-white font-body antialiased;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-radioactive-green rounded-full hover:bg-green-400;
+}
+
+.card-hover {
+  @apply transition-transform duration-200 hover:-translate-y-2 hover:shadow-lg hover:shadow-radioactive-green/20 cursor-pointer;
+}
+
+.glow-apocalypse {
+  @apply animate-pulse border-2 border-warning-yellow shadow-lg shadow-warning-yellow/30;
+}
